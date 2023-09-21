@@ -1,0 +1,63 @@
+#picture-css
+{
+background-image: url("Images/PXDemo.jpg");
+margin:0auto;
+}
+body{
+    background: #F4f4f4;
+    margin: 0;
+    font-family: 'Montserrat';
+}
+
+.container
+{
+  width: 780px;
+  margin:0 auto;
+  background: rgb(211, 216, 220);  
+}
+
+
+.topnav{
+    background: #361717;
+    padding: 5px 0 5px 10px;
+}
+
+.topnav a{
+    color : #f6f7f8;
+    text-decoration: none;
+    font-size: 14px;
+    font-family: 'Montserrat';
+}
+
+.topnav a:hover{
+    background-color: #1bc3a7;
+}
+
+
+
+.dragred
+{
+    width: 150px;
+     height: 150px;
+      padding: 0.5em;
+      background-color: red;
+}
+
+.dragblue
+{
+    width: 150px;
+     height: 150px;
+      padding: 0.5em;
+      background-color: blue;
+}
+.draggreen
+{
+    width: 150px;
+     height: 150px;
+      padding: 0.5em;
+      background-color: green;
+}
+.option{
+    margin-left: 4px;
+    margin-right: 4px;
+}

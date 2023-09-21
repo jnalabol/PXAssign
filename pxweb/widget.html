@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+    <title>
+        Widget
+    </title> 
+    <script src="Javascript/script.js"></script>
+    <link rel="stylesheet" href= "widget.css">
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+</head>
+<script defer src="login-page.js"></script>
+<body>
+    <div class="container">
+    <div id="picture-css">
+    </div>
+    
+    <div class="topnav">
+        <a class="active" href="page.html">Home</a>
+        <a class="option" href="aboutme.html">Aboutme</a>
+        <a class="option" href="widget.html">Widget</a>
+        <a class="option" href="contact.html">Contact</a>
+        <a class="option" href="login.html">Logout</a>
+      </div>
+    <div class="dragred" class="ui-widget-content">
+        <p>Drag red</p>
+      </div>
+      <div class="dragblue" class="ui-widget-content">
+        <p>Drag blue</p>
+      </div>
+      <div class="draggreen" class="ui-widget-content">
+        <p>Drag Green</p>
+      </div>
+  
+</div>
+<script>
+    $( function() {
+        $( ".dragred").draggable({
+            
+        })
+      } );
+
+      $( function() {
+        $( ".dragblue").draggable({
+           
+        })
+      } );
+
+      $( function() {
+        $( ".draggreen").draggable({
+           
+            
+        })
+      } );
+
+    </script>
+</body>
+</html>
