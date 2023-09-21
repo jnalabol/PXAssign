@@ -11,7 +11,7 @@ loginButton.addEventListener("click", (e) => {
     const username = loginForm.username.value;
     const password = loginForm.password.value;
 
-    if (username === "user@gmail.com" && password === "user") {
+    if ((username === "user@gmail.com" && password === "user")||(username === "jyo@gmail.com" && password === "jyo")){
 
         var id = username.substr(0,5);
         
