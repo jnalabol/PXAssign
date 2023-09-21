@@ -11,9 +11,27 @@ loginButton.addEventListener("click", (e) => {
     const username = loginForm.username.value;
     const password = loginForm.password.value;
 
-    if (username === "user" && password === "user") {
+    if (username === "user@gmail.com" && password === "user") {
+
+        var id = username.substr(0,5);
+        
+        //passing user and account objects:
+        aptrinsic("identify",
+            {
+                //User Fields
+                "id": id, // Required for logged in app users
+                "email": username,
+                "firstName": "Jyoshna",
+                "lastName": "Nalabolu",
+            },
+            {
+                //Account Fields
+                "id": "IBM", //Required
+                "name": "International Business Machine",
+            });
         alert("You have successfully logged in.");
-        location.href = "Page.html";
+        location.href = "page.html";
+       
     } else {
         loginErrorMsg.style.opacity = 1;
     }
