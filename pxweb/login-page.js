@@ -35,6 +35,7 @@ e.preventDefault();
             });
         if(username === "user@gmail.com"){
             aptrinsic("set", "user", {"firstName":"Mounika", "lastName":"Nalabolu"});
+        }
         alert("You have successfully logged in.");
         location.href = "page.html";
        
