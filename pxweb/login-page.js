@@ -10,7 +10,7 @@ loginButton.addEventListener("click", (e) => {
 e.preventDefault();
     const username = loginForm.username.value;
     const password = loginForm.password.value;
-    if(userName==="jyo@gmail.com")
+    if(username==="jyo@gmail.com")
      phoneNumber = "8341967395";
     else
         phoneNumber = "9103647395";
