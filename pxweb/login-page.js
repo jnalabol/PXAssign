@@ -11,7 +11,7 @@ loginButton.addEventListener("click", (e) => {
     const username = loginForm.username.value;
     const password = loginForm.password.value;
     let phoneNumber;
-    if(username==="jyo@gmail.com")
+    if(username === "jyo@gmail.com")
         phoneNumber = "8341967395";
     else
         phoneNumber = "9103647395";
@@ -35,6 +35,7 @@ loginButton.addEventListener("click", (e) => {
                 "name": "International Business Machine",
             });
         if(username === "user@gmail.com"){
+            alert("You ");
             aptrinsic("set", "user", {"firstName" : "Mounika", "lastName" : "Nalabolu"});
         }
         alert("You have successfully logged in.");
