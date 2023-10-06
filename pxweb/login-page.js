@@ -5,11 +5,12 @@
 })(window,document,"https://web-sdk.aptrinsic.com/api/aptrinsic.js","AP-ULPLJAP59HWA-2");
 const loginForm = document.getElementById("login-form");
 const loginButton = document.getElementById("login-form-submit");
-let phoneNumber;
+
 loginButton.addEventListener("click", (e) => {
     e.preventDefault();
     const username = loginForm.username.value;
     const password = loginForm.password.value;
+    let phoneNumber;
     if(username==="jyo@gmail.com")
         phoneNumber = "8341967395";
     else
