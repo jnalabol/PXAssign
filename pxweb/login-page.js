@@ -6,15 +6,14 @@
 const loginForm = document.getElementById("login-form");
 const loginButton = document.getElementById("login-form-submit");
 let phoneNumber;
-if(userName==="jyo@gmail.com")
-     phoneNumber = "8341967395";
-else
-    phoneNumber = "9103647395";
-    
 loginButton.addEventListener("click", (e) => {
-    e.preventDefault();
+e.preventDefault();
     const username = loginForm.username.value;
     const password = loginForm.password.value;
+    if(userName==="jyo@gmail.com")
+     phoneNumber = "8341967395";
+    else
+        phoneNumber = "9103647395";
 
     if ((username === "user@gmail.com" && password === "user")||(username === "jyo@gmail.com" && password === "jyo")){
 
