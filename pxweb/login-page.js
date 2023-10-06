@@ -7,11 +7,11 @@ const loginForm = document.getElementById("login-form");
 const loginButton = document.getElementById("login-form-submit");
 let phoneNumber;
 loginButton.addEventListener("click", (e) => {
-e.preventDefault();
+    e.preventDefault();
     const username = loginForm.username.value;
     const password = loginForm.password.value;
     if(username==="jyo@gmail.com")
-     phoneNumber = "8341967395";
+        phoneNumber = "8341967395";
     else
         phoneNumber = "9103647395";
 
@@ -34,7 +34,7 @@ e.preventDefault();
                 "name": "International Business Machine",
             });
         if(username === "user@gmail.com"){
-            aptrinsic("set", "user", {"firstName":"Mounika", "lastName":"Nalabolu"});
+            aptrinsic("set", "user", {"firstName" : "Mounika", "lastName" : "Nalabolu"});
         }
         alert("You have successfully logged in.");
         location.href = "page.html";
