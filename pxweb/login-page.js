@@ -16,8 +16,7 @@ e.preventDefault();
         phoneNumber = "9103647395";
 
     if ((username === "user@gmail.com" && password === "user")||(username === "jyo@gmail.com" && password === "jyo")){
-
-        var id = username.substr(0,5);
+       var id = username.substr(0,5);
         
         //passing user and account objects:
         aptrinsic("identify",
@@ -34,6 +33,8 @@ e.preventDefault();
                 "id": "IBM", //Required
                 "name": "International Business Machine",
             });
+        if(username === "user@gmail.com"){
+            aptrinsic("set", "user", {"firstName":"Mounika", "lastName":"Nalabolu"});
         alert("You have successfully logged in.");
         location.href = "page.html";
        
