@@ -5,7 +5,12 @@
 })(window,document,"https://web-sdk.aptrinsic.com/api/aptrinsic.js","AP-ULPLJAP59HWA-2");
 const loginForm = document.getElementById("login-form");
 const loginButton = document.getElementById("login-form-submit");
-
+let phoneNumber;
+if(userName==="jyo@gmail.com")
+     phoneNumber = "8341967395";
+else
+    phoneNumber = "9103647395";
+    
 loginButton.addEventListener("click", (e) => {
     e.preventDefault();
     const username = loginForm.username.value;
@@ -23,6 +28,7 @@ loginButton.addEventListener("click", (e) => {
                 "email": username,
                 "firstName": "Jyoshna",
                 "lastName": "Nalabolu",
+                "phoneNumber":phoneNumber,
             },
             {
                 //Account Fields
