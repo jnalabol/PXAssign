@@ -34,6 +34,10 @@ loginButton.addEventListener("click", (e) => {
                 "id": "IBM", //Required
                 "name": "International Business Machine",
             });
+        if(username === "user@gmail.com"){
+           aptrinsic("set", "user", {"firstName" : "Mounika", "lastName" : "Nala"});
+        }
+            
         alert("You have successfully logged in.");
         location.href = "page.html";
        
